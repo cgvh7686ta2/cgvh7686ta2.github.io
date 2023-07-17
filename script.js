@@ -61,3 +61,7 @@ const scrollUp = () => {
 }
 
 document.addEventListener('scroll', scrollUp)
+
+var getUrl = window.location;
+var baseUrl = getUrl.protocol + "//" + getUrl.host + "/" + getUrl.pathname.split('/')[1];
+document.getElementById("home-navigate").href = "baseUrl";
